@@ -1,4 +1,17 @@
 .calculator {
+  background: #1e1e1e;          /* dark background for the calculator */
+  width: 100%;                   /* full width of screen */
+  max-width: 100%;               /* prevent shrinking */
+  height: 100vh;                 /* full height of screen */
+  border-radius: 0;              /* no rounded corners */
+  display: flex;                 
+  flex-direction: column;        /* stack display and buttons vertically */
+  justify-content: flex-start;   /* display at top */
+  padding: 0;                    /* no extra space inside */
+  margin: 0;                     /* no extra space outside */
+  box-sizing: border-box;        /* count padding inside width/height */
+}
+.calculator {
   background: #1e1e1e;          /* dark background */
   width: 100vw;                  /* full screen width */
   height: 100vh;                 /* full screen height */
