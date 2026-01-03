@@ -4,3 +4,14 @@ html, body {
   width: 100%;    /* fill full width */
   height: 100%;   /* fill full height */
 }
+.calculator {
+  background: #1e1e1e;    /* dark background for the calculator */
+  width: 100%;             /* full width of the screen */
+  height: 100%;            /* full height of the screen */
+  display: flex;           
+  flex-direction: column;  /* stack display on top, buttons below */
+  justify-content: flex-start; /* start stacking from the top */
+  padding: 0;              /* no extra spacing inside */
+  margin: 0;               /* no extra spacing outside */
+  box-sizing: border-box;  /* include padding in width/height */
+}
