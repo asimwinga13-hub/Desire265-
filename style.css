@@ -1,4 +1,10 @@
-.calculator {
+html, body {
+  margin: 0;       /* remove default margin around page */
+  padding: 0;      /* remove default padding */
+  width: 100%;     /* full width of screen */
+  height: 100%;    /* full height of screen */
+}
+.calculator{
   background: #1e1e1e;          /* dark background for the calculator */
   width: 100%;                   /* full width of screen */
   max-width: 100%;               /* prevent shrinking */
