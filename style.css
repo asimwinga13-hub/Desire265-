@@ -11,6 +11,20 @@
   margin: 0;                     /* no extra space outside */
   box-sizing: border-box;        /* count padding inside width/height */
 }
+#display {
+  width: 100%;           
+  height: 20%;           /* top 20% of screen */
+  font-size: 36px;       /* big numbers */
+  font-weight: bold;     
+  text-align: right;     
+  padding: 10px;         
+  border: none;          
+  background: white;     
+  color: black;          
+  border-radius: 5px;    
+  margin-bottom: 20px;   
+  box-sizing: border-box;
+}
 .calculator {
   background: #1e1e1e;          /* dark background */
   width: 100vw;                  /* full screen width */
