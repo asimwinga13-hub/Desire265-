@@ -1,7 +1,7 @@
 {
-  "name": "AnthonyCalculator",
+  "name": "Anthony calculator",
   "short_name": "Calc",
-  "start_url": "/index.html",
+  "start_url": "/Desire265-/index.html",
   "display": "standalone",
   "background_color": "#1e1e1e",
   "theme_color": "#1e1e1e",
