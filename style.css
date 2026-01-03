@@ -28,3 +28,20 @@ html, body {
   border-radius: 0;      
   box-sizing: border-box;
 }
+.buttons {
+  display: grid;                       
+  grid-template-columns: repeat(4, 1fr);  /* 4 buttons per row */
+  grid-template-rows: repeat(5, 1fr);     /* 5 rows to fill remaining space */
+  gap: 5px;                               /* spacing between buttons */
+  height: calc(100% - 20%);               /* remaining height after display */
+  width: 100%;                            /* full width */
+}
+
+button {
+  font-size: 24px;
+  border-radius: 5px;
+  background: #2c2c2c;
+  color: white;
+  width: 100%;     /* fill grid cell horizontally */
+  height: 100%;    /* fill grid cell vertically */
+}
