@@ -1,10 +1,10 @@
 {
-  "name": "Anthony calculator",
-  "short_name": "Calc",
+  "name": "Calculator",
+  "short_name": "Calculator",
   "start_url": "/Desire265-/index.html",
   "display": "standalone",
-  "background_color": "#1e1e1e",
-  "theme_color": "#1e1e1e",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "icon.png",
