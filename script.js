@@ -1,6 +1,9 @@
 const display = document.getElementById("display");
 
-function appendValue(value) {
+function append(value) {
+  if (navigator.vibrate) {
+    navigator.vibrate(30);
+  }
   display.value += value;
 }
 
