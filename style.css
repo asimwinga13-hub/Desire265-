@@ -5,7 +5,7 @@ html, body {
   height: 100%;   /* fill full height */
 }
 .calculator {
-  background: #1e1e1e;    /* dark background for the calculator */
+  background: #222;    /* dark background for the calculator */
   width: 100%;             /* full width of the screen */
   height: 100%;            /* full height of the screen */
   display: flex;           
