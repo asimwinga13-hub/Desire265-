@@ -81,3 +81,16 @@ button {
   border: none;
   outline: none;
   }
+/* Style for calculator display */
+#display {
+  width: 100%;
+  height: 15vh;              /* height of the display */
+  background-color: black;   /* makes background dark */
+  color: white;              /* numbers visible */
+  font-size: 3rem;           /* bigger numbers */
+  text-align: right;         /* numbers aligned right */
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
