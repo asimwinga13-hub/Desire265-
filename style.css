@@ -70,3 +70,14 @@ button {
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
   }
+#display {
+  width: 100%;
+  height: 15vh;           /* adjust height */
+  background-color: black; /* make background dark */
+  color: #00ff00;          /* make text visible */
+  font-size: 3rem;         /* bigger numbers */
+  text-align: right;       /* numbers on the right */
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  }
