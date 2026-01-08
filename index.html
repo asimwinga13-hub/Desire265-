@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthony Simwinga Calculator</title>
   <link rel="stylesheet" href="style.css">
-  <title>Anthony simwinga Calculator</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div class="buttons">
-  <!-- Scientific buttons -->
-  <button onclick="scientific('sin')">sin</button>
-  <button onclick="scientific('cos')">cos</button>
-  <button onclick="scientific('tan')">tan</button>
-  <button onclick="scientific('sqrt')">√</button>
-  <button onclick="scientific('square')">x²</button>
-  <button onclick="scientific('pi')">π</button>
-  <button onclick="clearDisplay()">C</button>
-  <button onclick="deleteLast()">⌫</button>
+  <!-- Calculator wrapper -->
+  <div class="calculator">
+    
+    <!-- Display -->
+    <input type="text" id="display" readonly>
 
-  <!-- Operators -->
-  <button onclick="append('/')">÷</button>
-  <button onclick="append('*')">×</button>
-  <button onclick="append('-')">−</button>
-  <button onclick="append('+')">+</button>
+    <!-- Buttons -->
+    <div class="buttons">
+      <!-- Scientific buttons -->
+      <button onclick="scientific('sin')">sin</button>
+      <button onclick="scientific('cos')">cos</button>
+      <button onclick="scientific('tan')">tan</button>
+      <button onclick="scientific('sqrt')">√</button>
+      <button onclick="scientific('square')">x²</button>
+      <button onclick="scientific('pi')">π</button>
 
-  <!-- Numbers -->
-  <button onclick="append('7')">7</button>
-  <button onclick="append('8')">8</button>
-  <button onclick="append('9')">9</button>
-  <button onclick="append('4')">4</button>
-  <button onclick="append('5')">5</button>
-  <button onclick="append('6')">6</button>
-  <button onclick="append('1')">1</button>
-  <button onclick="append('2')">2</button>
-  <button onclick="append('3')">3</button>
-  <button onclick="append('0')" class="zero">0</button>
-  <button onclick="append('.')">.</button>
+      <!-- Clear / Delete -->
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()">⌫</button>
 
-  <!-- Equals -->
-  <button onclick="calculate()" class="equal">=</button>
+      <!-- Operators -->
+      <button onclick="append('/')">÷</button>
+      <button onclick="append('*')">×</button>
+      <button onclick="append('-')">−</button>
+      <button onclick="append('+')">+</button>
+
+      <!-- Numbers -->
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('0')" class="zero">0</button>
+      <button onclick="append('.')">.</button>
+
+      <!-- Equals -->
+      <button onclick="calculate()" class="equal">=</button>
+    </div>
   </div>
-  <link rel="stylesheet" href="style.css">
-  <script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js");
-  }
-  </script>
+
+  <!-- Scripts -->
   <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
 </body>
-  </html>
+</html>
