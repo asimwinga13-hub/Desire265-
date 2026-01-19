@@ -1,9 +1,6 @@
 const display = document.getElementById("display");
 
 function append(value) {
-  if (navigator.vibrate) {
-    navigator.vibrate(30);
-  }
   display.value += value;
 }
 
@@ -22,24 +19,20 @@ function calculate() {
     display.value = "Error";
   }
 }
+
 function scientific(type) {
   let value = parseFloat(display.value);
 
-  if (isNaN(value) && type !== "pi") {
+  if (type === "pi") {
+    display.value += Math.PI;
     return;
   }
 
-  if (type === "sin") {
-    display.value = Math.sin(value);
-  } else if (type === "cos") {
-    display.value = Math.cos(value);
-  } else if (type === "tan") {
-    display.value = Math.tan(value);
-  } else if (type === "sqrt") {
-    display.value = Math.sqrt(value);
-  } else if (type === "square") {
-    display.value = value * value;
-  } else if (type === "pi") {
-    display.value += Math.PI;
-  }
+  if (isNaN(value)) return;
+
+  if (type === "sin") display.value = Math.sin(value);
+  if (type === "cos") display.value = Math.cos(value);
+  if (type === "tan") display.value = Math.tan(value);
+  if (type === "sqrt") display.value = Math.sqrt(value);
+  if (type === "square") display.value = value * value;
 }
