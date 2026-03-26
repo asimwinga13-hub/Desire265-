@@ -1,63 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anthony Simwinga Calculator</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desire265</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Calculator wrapper -->
-  <div class="calculator">
-    
-    <!-- Display -->
-    <input type="text" id="display" readonly>
-
-    <!-- Buttons -->
-    <div class="buttons">
-      <!-- Scientific buttons -->
-      <button onclick="scientific('sin')">sin</button>
-      <button onclick="scientific('cos')">cos</button>
-      <button onclick="scientific('tan')">tan</button>
-      <button onclick="scientific('sqrt')">√</button>
-      <button onclick="scientific('square')">x²</button>
-      <button onclick="scientific('pi')">π</button>
-
-      <!-- Clear / Delete -->
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="deleteLast()">⌫</button>
-
-      <!-- Operators -->
-      <button onclick="append('/')">÷</button>
-      <button onclick="append('*')">×</button>
-      <button onclick="append('-')">−</button>
-      <button onclick="append('+')">+</button>
-
-      <!-- Numbers -->
-      <button onclick="append('7')">7</button>
-      <button onclick="append('8')">8</button>
-      <button onclick="append('9')">9</button>
-      <button onclick="append('4')">4</button>
-      <button onclick="append('5')">5</button>
-      <button onclick="append('6')">6</button>
-      <button onclick="append('1')">1</button>
-      <button onclick="append('2')">2</button>
-      <button onclick="append('3')">3</button>
-      <button onclick="append('0')" class="zero">0</button>
-      <button onclick="append('.')">.</button>
-
-      <!-- Equals -->
-      <button onclick="calculate()" class="equal">=</button>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="script.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
-    }
-  </script>
+    <nav>
+        <ul>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#music-player">Music Player</a></li>
+            <li><a href="#video-player">Video Player</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="calculator">
+            <h2>Calculator</h2>
+            <!-- Calculator implementation goes here -->
+        </section>
+        <section id="music-player">
+            <h2>Music Player</h2>
+            <!-- Music player implementation goes here -->
+        </section>
+        <section id="video-player">
+            <h2>Video Player</h2>
+            <!-- Video player implementation goes here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
